@@ -5,7 +5,7 @@
 site:
     rm -rf public
     mkdir -p public
-    cp index.html clock.js styles.css public/
+    cp index.html clock.js styles.css _headers public/
 
 # Serve the page locally at http://localhost:8765/.
 serve:
