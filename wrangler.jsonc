@@ -1,0 +1,12 @@
+// Serves the word clock as static assets on Cloudflare Workers.
+// Workers Builds runs `just site` and deploys main; other branches get Previews.
+{
+  "name": "tocades-poblador-cat",
+  "compatibility_date": "2026-10-26",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "tocades.poblador.cat", "custom_domain": true }],
+  "previews": {}
+}
