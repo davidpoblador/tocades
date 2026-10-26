@@ -56,16 +56,9 @@ single contiguous blocks so the elision reads naturally.
 Static site, no build step:
 
 ```bash
-just serve
+python3 -m http.server 8765
 # open http://localhost:8765/
 ```
-
-## Deploying
-
-Cloudflare Workers Builds deploys it as static assets. A push to `main` runs
-`just site` and publishes `public/` to tocades.poblador.cat; a push to any
-other branch publishes a preview URL instead, posted on its pull request.
-`wrangler.jsonc` holds the Worker name, the domain and the assets directory.
 
 ## Credit
 

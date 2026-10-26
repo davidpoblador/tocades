@@ -1,5 +1,5 @@
 # ABOUTME: Task runner for the word clock. `just site` stages the files that are
-# ABOUTME: served into public/, which wrangler.jsonc publishes as static assets.
+# ABOUTME: served into public/; `just serve` serves the page locally.
 
 # Stage the hand-written page; there is no build step.
 site:
