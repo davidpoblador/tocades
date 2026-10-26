@@ -8,5 +8,9 @@
     "not_found_handling": "404-page"
   },
   "routes": [{ "pattern": "tocades.poblador.cat", "custom_domain": true }],
+  // Branch preview URLs live on workers.dev and need it enabled; a custom
+  // domain would otherwise switch both off.
+  "workers_dev": true,
+  "preview_urls": true,
   "previews": {}
 }
